@@ -11,10 +11,32 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from lemonadep device
 $(call inherit-product, device/oneplus/lemonadep/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common CherishOS stuff.
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_lemonadep
+# CherishOS stuff.
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_ENABLE_BLUR := true
+EXTRA_UDFPS_ANIMATIONS := true
+
+# CherishOS Build.
+CHERISH_BUILD_TYPE=OFFICIAL
+WITH_GMS := true
+#CHERISH_VANILLA := true
+#TARGET_USES_PICO_GAPPS := true
+TARGET_USES_MINI_GAPPS := true
+#USE_PIXEL_CHARGING := true
+#TARGET_INCLUDE_CARRIER_SETTINGS := true
+
+# Cherish props
+CHERISH_MAINTAINER := JYR_RC
+CHERISH_CHIPSET := SM8350
+CHERISH_BATTERY := 4500mAh
+CHERISH_DISPLAY := 1440x3216
+
+PRODUCT_NAME := cherish_lemonadep
 PRODUCT_DEVICE := lemonadep
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
