@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cherish_lemonadep.mk
+    $(LOCAL_DIR)/derp_lemonadep.mk
 
 COMMON_LUNCH_CHOICES := \
-    cherish_lemonadep-user \
-    cherish_lemonadep-userdebug \
-    cherish_lemonadep-eng
+    derp_lemonadep-user \
+    derp_lemonadep-userdebug \
+    derp_lemonadep-eng
