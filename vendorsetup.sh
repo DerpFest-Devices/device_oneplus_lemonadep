@@ -2,15 +2,15 @@ echo 'Starting to clone stuffs needed to build for lemonadep'
 
 # Common
 echo 'Cloning common tree'
-git clone https://github.com/JYRRC/device_oneplus_sm8350-common.git -b udc device/oneplus/sm8350-common
+git clone https://github.com/JYRRC/device_oneplus_sm8350-common.git -b derp device/oneplus/sm8350-common
 
 # Vendor
 echo 'Cloning vendor tree'
-rm -rf vendor/oneplus/lemonadep && git clone https://github.com/JYRRC/vendor_oneplus_lemonadep.git -b udc vendor/oneplus/lemonadep
+rm -rf vendor/oneplus/lemonadep && git clone https://github.com/JYRRC/vendor_oneplus_lemonadep.git -b derp vendor/oneplus/lemonadep
 
 # Vendor Common
 echo 'Cloning vendor tree'
-rm -rf vendor/oneplus/sm8350-common && git clone https://github.com/JYRRC/vendor_oneplus_sm8350-common.git -b udc vendor/oneplus/sm8350-common
+rm -rf vendor/oneplus/sm8350-common && git clone https://github.com/JYRRC/vendor_oneplus_sm8350-common.git -b derp vendor/oneplus/sm8350-common
 
 # Kernel
 echo 'Cloning kernel tree'
